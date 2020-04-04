@@ -1,0 +1,45 @@
+page-food {
+
+}
+ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 26%;
+    font-size: 2.0em;
+    width: 70%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 32%;
+    width: 60%;
+    color: #fff;
+  }
+//   ion-card{
+//     display: flex;
+//     flex-direction: column;
+//     width: 80% !important;
+//     margin: 0 !important;
+//   }
+  ion-card{
+    
+	text-align: center;
+	align-content: center;
+    align-self: center;
+    max-width: 360px;
+    max-height:210px;
+	img{
+	  text-align: center;
+	  align-content: center;
+	  align-self: center;
+	  max-width: 400px;
+	  max-height:200px;
+	}
+}

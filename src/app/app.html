@@ -1,0 +1,45 @@
+<ion-menu [content]="nav" >
+    <ion-header>
+        <ion-toolbar>
+<ion-title>
+    Delivery.com
+</ion-title>
+        </ion-toolbar>
+    </ion-header>
+<ion-content style=" background-color:rgb(162, 151, 170)">
+     
+        <button ion-item (click)="onLoad(homepage)" style=" background-color:rgb(162, 151, 170)" >
+                <ion-icon name="home" item-left></ion-icon>
+           Home
+            </button>
+                <button ion-item (click)="onLoad(mepage)" style=" background-color:rgb(162, 151, 170)" >
+                    <ion-icon name="contact" item-left></ion-icon>
+                 My Account
+                </button>
+    
+        <button ion-item (click)="onLoad(AboutusPage)"style=" background-color:rgb(162, 151, 170)" >
+            <ion-icon name="document" item-left></ion-icon>
+          About us
+        </button>
+  
+            <button ion-item (click)="onLoad(helpfeedbackpage)" style=" background-color:rgb(162, 151, 170)">
+                <ion-icon name="ios-help-circle" item-left></ion-icon>
+            Help & Feedback
+            </button>
+     
+</ion-content>
+</ion-menu>
+
+
+
+    <div *ngIf="showSplash" class="splash"> 
+
+
+            <div class="spinner">
+                    <img class="overlay" src="assets/imgs/ok.jpg"> 
+
+                </div>
+
+    </div>
+<!-- <ion-nav [root]="rootPage"></ion-nav> -->
+<ion-nav [root]="signin" #nav></ion-nav>
