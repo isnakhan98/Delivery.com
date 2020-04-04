@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content style="background-color: rgb(77, 77, 155);" padding>
+  <br>
+
+  <p style="font-size: 7vmin;text-align: center;color:black;"><b>ORDER ANYTHING LESS THAN 5KGS</b></p>
+  <!-- <ion-card  style="background-color:black;color:white; height: 20%;width: 45.33%;text-align: center;">        
+        <ion-card-content style="background-color:black;color:white; height: 20%;width: 45.33%;
+       text-align: center;" >
+    ORDER ANYTHING OF LESS THAN 5KGs 
+        </ion-card-content> -->
+
+  <!-- </ion-card> -->
+  <br>
+  <br>
+  <ion-list>
+    <ion-item>
+
+      <ion-label floating>
+        <p style="color: black; font-size:4vmin;"><b>FROM WHERE TO COLLECT YOUR PRODUCT?</b></p>
+      </ion-label>
+      <!-- <ion-input type="password"  [(ngModel)]="user.password"></ion-input>  -->
+      <ion-input [(ngModel)]="location"></ion-input>
+    </ion-item>
+
+    <br>
+
+    <ion-item>
+
+      <ion-label floating>
+        <p style="color: black;font-size: 4vmin;"><b>WHERE TO DELIVER YOUR PRODUCT?</b></p>
+      </ion-label>
+      <!-- <ion-input type="password"  [(ngModel)]="user.password"></ion-input>  -->
+      <ion-input [(ngModel)]="destination"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div style="text-align: center;">
+    <button style="height: 10vmin;" (click)="onSubmit()">
+    <b>  LET'S GO!</b>
+    </button>
+  </div>
+
+
+</ion-content>

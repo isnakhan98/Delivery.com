@@ -1,0 +1,18 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>RESTAURANTS</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<!-- <ion-content  style="background-image:url('../assets/imgs/food.jpg');"> -->
+
+  <ion-content style="background-color: rgb(97, 16, 16)">
+    <ion-card *ngFor="let r of restaurant" style="border: 0px;">
+      <img [src]="r.img" (click)="show_deals(r)">
+  
+    </ion-card>
+                         
+  </ion-content>
+  

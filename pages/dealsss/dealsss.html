@@ -1,0 +1,80 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>SELECT YOUR FOOD</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-slides pager *ngFor="let d of display" style="border: 0px; " autoplay="500000" loop="true" duration="100000">
+
+        <ion-slide>
+
+            <img [src]="d.img" style="width:10500px; height: 400px;">
+
+            <ion-list style="background-color:transparent">
+
+
+                <ion-item>
+                    <p style=" text-align:center;   font-weight:bold; font-size: 22px; color: rgb(116, 52, 52);">{{d.desc}}</p>
+                </ion-item>
+                <ion-item>
+                    {{d.price}}
+                </ion-item>
+
+
+
+                <ion-item>
+                    <ion-label stacked style="animation-duration: 10mins">
+                        <h2>{{d.quantity}}</h2>
+                    </ion-label>
+                    <ion-select [(ngModel)]="ugames">
+                        <ion-option value="1">1</ion-option>
+                        <ion-option value="2">2</ion-option>
+                        <ion-option value="3">3</ion-option>
+                        <ion-option value="4">None</ion-option>
+                    </ion-select>
+                </ion-item>
+
+                <button style="font-size:5vmin;" (click)="ordernow()">
+                    ORDER NOW!
+                </button>
+
+
+            </ion-list>
+
+        </ion-slide>
+
+
+
+        <ion-slide duration="10000">
+            <img [src]="d.image" style="width:10500px; height: 400px;">
+            <!-- <img [src]="d.image" style="width:10500px; height: 350px;"> -->
+            <ion-list style="background-color:transparent">
+
+                <ion-item>
+                    <p style=" text-align:center;   font-weight:bold; font-size: 22px; color: rgb(116, 52, 52);">{{d.desc1}}</p>
+                </ion-item>
+
+                <ion-item>
+                    {{d.price1}}
+                </ion-item>
+                <ion-item>
+                        <ion-label stacked style="animation-duration: 10mins">
+                            <h2>{{d.quantity1}}</h2>
+                        </ion-label>
+                        <ion-select [(ngModel)]="ugames">
+                            <ion-option value="1">1</ion-option>
+                            <ion-option value="2">2</ion-option>
+                            <ion-option value="3">3</ion-option>
+                            <ion-option value="4">None</ion-option>
+                        </ion-select>
+                    </ion-item>
+                <button style="font-size:5vmin;" (click)="ordernow(d)">
+                    ORDER NOW!
+                </button>
+
+            </ion-list>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

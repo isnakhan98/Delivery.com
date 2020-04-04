@@ -1,0 +1,52 @@
+<!-- 
+<ion-header  >
+
+</ion-header>
+ <ion-content padding style="background-image: url('../assets/imgs/try.jpg');"> -->
+
+
+<ion-content padding style="background-image: url('../assets/imgs/do1.jpg');">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <h5>
+    <p class="a"><b>HEY! SIGN IN NOW</b></p>
+
+  </h5>
+  <br>
+  <br>
+
+  <ion-item class="item item-trns text-left">
+    <ion-label floating><b>
+        <p class="b"><b>USERNAME</b></p>
+      </b></ion-label>
+    <ion-input [(ngModel)]="name"></ion-input>
+
+  </ion-item>
+
+  <ion-item class="item item-trns text-center">
+    <ion-label floating><b>
+        <p class="b"><b>PASSWORD</b></p>
+      </b></ion-label>
+    <ion-input [(ngModel)]="pass" type="password" ></ion-input>
+
+  </ion-item>
+  <br>
+  <br>
+
+  <div class="signup-button">
+    <button block (click)="goto_selectionpage()" class="bu"> <b>SUBMIT
+
+      </b></button>
+  </div>
+
+
+  <br>
+  <p class="d" (click)="goto_accountcreation()"><b>DO NOT HAVE AN ACCOUNT? <br>CLICK HERE!</b></p>
+
+</ion-content>

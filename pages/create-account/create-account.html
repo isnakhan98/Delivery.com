@@ -1,0 +1,50 @@
+<ion-header>
+</ion-header>
+<ion-content padding style="background-image:  url('../assets/imgs/do9.jpg');">
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2 style="text-align: center;">CREATE ACCOUNT</h2>
+  <br>
+  <br>
+  <br>
+  <ion-card style="box-align: center;">
+    <ion-list>
+      <ion-item style="text-align:left;background-color: transparent ;">
+        <ion-label floating><b>
+            <p style="color:black;">USERNAME</p>
+          </b></ion-label>
+        <ion-input [(ngModel)]="username"></ion-input>
+      </ion-item>
+
+      <!-- <ion-item style="text-align:left;background-color: transparent"> -->
+      <ion-item style="text-align:left;background-color: transparent">
+        <ion-label floating><b>
+
+            <p style="color:black;">PASSWORD</p>
+          </b></ion-label>
+
+        <ion-input [(ngModel)]="password"></ion-input>
+      </ion-item>
+
+
+
+      <ion-item style="text-align:left;background-color: transparent;">
+        <ion-label floating><b>
+            <p style="color:black;">EMAIL ADDRESS</p>
+          </b></ion-label>
+        <!-- <ion-input type="password"  [(ngModel)]="user.password"></ion-input> -->
+        <ion-input [(ngModel)]="email_address"></ion-input>
+      </ion-item>
+
+    </ion-list>
+  </ion-card>
+
+  <div class="wrapper">
+    <button type="button" class="l" (click)="onSubmit()"><b>SUBMIT</b></button></div>
+
+
+</ion-content>

@@ -1,0 +1,72 @@
+<ion-menu [content]="nav"  >
+         <ion-header>
+            <ion-toolbar>
+    <ion-title>
+        Delivery.com
+    </ion-title>
+            </ion-toolbar>
+        </ion-header>
+    <ion-content class="back">
+        
+        <br>
+         <ion-list inset>
+             <ion-item (click)="onLoad(homepage)" class="back" inset>
+                    <!-- <ion-icon name="contact" item-left></ion-icon> -->
+                    HOME
+             </ion-item>
+         
+            <ion-item (click)="onLoad(AboutusPage)" class="back" inset>
+                    <!-- <ion-icon name="document" item-left></ion-icon> -->
+                  ABOUT US
+            </ion-item>
+        
+            <ion-item (click)="onLoad(signin)" class="back" inset>
+                   LOGOUT
+            </ion-item>
+        </ion-list>
+
+          <!-- <button ion-item (click)="onLoad(homepage)" class="back" >
+                   
+                    <button ion-item (click)="onLoad(mepage)"class="back" >
+                        <ion-icon name="contact" item-left></ion-icon>
+                     My Account
+                    </button>
+        
+            <button ion-item (click)="onLoad(AboutusPage)"class="back">
+                <ion-icon name="document" item-left></ion-icon>
+              About us
+            </button>
+      
+                <button ion-item (click)="onLoad(helpfeedbackpage)" class="back">
+                    <ion-icon name="ios-help-circle" item-left></ion-icon>
+                Help & Feedback
+                </button>
+          -->
+            <!-- <button ion-item (click)="onLoad(homepage)" class="back" >
+                    <ion-icon name="home" item-left></ion-icon>
+               Home
+                </button>
+                    <button ion-item (click)="onLoad(mepage)"class="back" >
+                        <ion-icon name="contact" item-left></ion-icon>
+                     My Account
+                    </button>
+        
+        
+                
+          -->
+    </ion-content>
+    </ion-menu>
+    
+    
+    
+        <div *ngIf="showSplash" class="splash"> 
+    
+    
+                <div class="spinner">
+                        <!-- <img class="overlay" src="assets/imgs/ok.jpg">  -->
+                        <img class="overlay" src="assets/imgs/isnatry.jpg"> 
+                    </div>
+    
+        </div>
+    <!-- <ion-nav [root]="rootPage"></ion-nav> -->
+    <ion-nav [root]="signin" #nav></ion-nav>
